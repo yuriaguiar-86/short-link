@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  api: 'https://api.shrtco.de/v2/shorten?url='
 };

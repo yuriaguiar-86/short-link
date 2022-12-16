@@ -1,0 +1,42 @@
+.aside {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  justify-content: center;
+  background: var(--dark);
+}
+
+.aside img {
+  position: relative;
+  width: 100%;
+}
+
+.aside h2 {
+  padding-bottom: 60px;
+  position: absolute;
+}
+
+.aside p {
+  position: absolute;
+  padding-top: 60px;
+}
+
+.aside a {
+  border-radius: 20px;
+  padding: 10px 20px;
+
+  color: var(--white);
+  background: var(--cyan);
+}
+
+@media screen and (max-width: 800px) {
+  .aside h2 {
+    padding-right: 160px;
+    padding-bottom: 0;
+  }
+
+  .aside p {
+    padding-left: 310px;
+    padding-bottom: 60px;
+  }
+}

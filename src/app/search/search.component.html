@@ -1,0 +1,21 @@
+<section class="containner__search">
+  <div class="search">
+    <input type="url" name="link" placeholder="Shorten a link here..." title="Report the link" required #input (blur)="shortUrl(input.value)" />
+    <button type="submit">Shorten It!</button>
+  </div>
+
+  <span *ngIf="msg_error">{{ message }}</span>
+
+  <section class="containner__shorten" *ngIf="url != null">
+    <p class="original">{{ url.result.original_link }}</p>
+
+    <div class="short">
+      <p>{{ url.result.short_link }}</p>
+      <button #input value="{{ url.result.short_link }}" (click)="copyUrl(input.value)" *ngIf="!text">Copy</button>
+      <button class="actived" *ngIf="text">Copied</button>
+    </div>
+  </section>
+</section>
+
+
+
